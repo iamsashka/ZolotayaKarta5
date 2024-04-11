@@ -40,8 +40,9 @@ namespace ZolotayaKarta
             Frame.Content = new Employees();
         }
 
-       
+        private void Frame_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
+        {
 
-
+        }
     }
 }

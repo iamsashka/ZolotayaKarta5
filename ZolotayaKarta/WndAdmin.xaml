@@ -13,17 +13,14 @@
 
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
-            
-
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="250"/>
 
         </Grid.ColumnDefinitions>
         <Button Content="Назад" HorizontalAlignment="Left" Width="70" Click="Button_Click3" Margin="0,293,0,4" Grid.Row="1"/>
 
-
         <Button x:Name="UsersButton" Grid.Column="0" Grid.Row="0" Content="Роли"  Click="UsersButton_Click" />
         <Button x:Name="EmployeesButton" Grid.Column="1" Grid.Row="0" Content="Сотрудники"  Click="EmployeesButton_Click"/>
-        <Frame x:Name="Frame" Grid.Row="1" Grid.ColumnSpan="6" Margin="98,32,38,-76"/>
+        <Frame x:Name="Frame" Grid.Row="1" Margin="0,32,-293,-76" Grid.Column="1" Navigated="Frame_Navigated"/>
     </Grid>
 </Window>

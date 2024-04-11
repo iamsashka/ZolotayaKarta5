@@ -47,7 +47,24 @@ namespace ZolotayaKarta
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
+            UsersGrid.Columns[0].Header = "Код пользователя";
+            UsersGrid.Columns[1].Header = "Логин";
+            UsersGrid.Columns[2].Header = "Пароль";
+            UsersGrid.Columns[3].Header = "Название роли";
+        }
 
+        private void RoleTbx_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+            string input = textBox.Text;
+
+            bool containsDigits = input.Any(char.IsDigit);
+
+            if (containsDigits)
+            {
+                MessageBox.Show("В поле должны быть введены тольео буквы!");
+                textBox.Text = string.Empty;
+            }
         }
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
@@ -144,9 +161,6 @@ namespace ZolotayaKarta
             }
         }
 
-        private void RoleTbx_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
+        
     }
 }

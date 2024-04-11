@@ -1,0 +1,42 @@
+﻿<Window x:Class="ZolotayaKarta.WndCasir"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZolotayaKarta"
+        mc:Ignorable="d"
+        Title="WndCasir" Height="450" Width="800">
+    <Grid Background="#FFF1F0B1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+
+
+
+        </Grid.ColumnDefinitions>
+        <Button Content="Назад" HorizontalAlignment="Left" Width="70" Click="Button_Click3" Margin="20,349,0,-34" Grid.Row="1"/>
+
+        <Button x:Name="CategoriesButton" Grid.Column="0" Grid.Row="0" Content="Категории"  Click="CategoriesButton_Click" Height="20" Grid.RowSpan="2" VerticalAlignment="Top" />
+        <Button x:Name="BrandsButton" Grid.Column="1" Grid.Row="0" Content="Бренды"  Click="BrandsButton_Click" Height="20" Grid.RowSpan="2" VerticalAlignment="Top" />
+        <Button x:Name="ProductsButton" Grid.Column="2" Content="Таблица продукты"  Click="ProductsButton_Click" />
+        <Button x:Name="CustomersButton" Grid.Column="3" Grid.Row="0" Content="Клиенты"  Click="CustomersButton_Click" />
+        <Button x:Name="OrderDetailsButton" Grid.Column="4" Grid.Row="0" Content="Детали заказа"  Click="OrderDetails_Click"/>
+        <Button x:Name="OrdersButton" Grid.Column="5" Grid.Row="0" Content="Заказ"  Click="OrdersButton_Click" />
+        <Button x:Name="PromotionsButton" Grid.Column="6" Grid.Row="0" Content="Акции"  Click="PromotionsButton_Click" />
+        <Frame x:Name="Frame" Grid.Row="1" Grid.ColumnSpan="7" Margin="88,32,0,0" Height="295" VerticalAlignment="Top"/>
+
+
+
+    </Grid>
+</Window>

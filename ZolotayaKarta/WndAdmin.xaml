@@ -1,0 +1,29 @@
+﻿<Window x:Class="ZolotayaKarta.WndAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZolotayaKarta"
+        mc:Ignorable="d"
+        Title="WndAdmin" Height="450" Width="500">
+    <Grid Background="#FFF1F0B1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            
+
+
+        </Grid.ColumnDefinitions>
+        <Button Content="Назад" HorizontalAlignment="Left" Width="70" Click="Button_Click3" Margin="0,293,0,4" Grid.Row="1"/>
+
+
+        <Button x:Name="UsersButton" Grid.Column="0" Grid.Row="0" Content="Роли"  Click="UsersButton_Click" />
+        <Button x:Name="EmployeesButton" Grid.Column="1" Grid.Row="0" Content="Сотрудники"  Click="EmployeesButton_Click"/>
+        <Frame x:Name="Frame" Grid.Row="1" Grid.ColumnSpan="6" Margin="98,32,38,-76"/>
+    </Grid>
+</Window>

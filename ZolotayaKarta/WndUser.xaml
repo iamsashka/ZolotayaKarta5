@@ -1,0 +1,38 @@
+﻿<Window x:Class="ZolotayaKarta.WndUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZolotayaKarta"
+        mc:Ignorable="d"
+        Title="WndUser" Height="450" Width="600">
+    <Grid Background="#FFF1F0B1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+
+
+        </Grid.ColumnDefinitions>
+        <Button Content="Назад" HorizontalAlignment="Center" Width="70" Click="Button_Click3" Margin="0,364,0,-60" Grid.Row="1"/>
+
+
+        <Button x:Name="CategoriesButton" Grid.Column="0" Grid.Row="0" Content="Категории"  Click="CategoriesButton_Click" Height="20" Grid.RowSpan="2" VerticalAlignment="Top" />
+        <Button x:Name="BrandsButton" Grid.Column="1" Grid.Row="0" Content="Бренды"  Click="BrandsButton_Click" />
+        <Button x:Name="ProductsButton" Grid.Column="2" Content="Таблица продукты"  Click="ProductsButton_Click" />
+        <Button x:Name="FeedbackButton" Grid.Column="3" Grid.Row="0" Content="Обратная связь"  Click="FeedbackButton_Click" />
+        <Button x:Name="StockButton" Grid.Column="4" Content="Таблица продукты"  Click="StockButton_Click" />
+        <Button x:Name="SuppliersButton" Grid.Column="5" Grid.Row="0" Content="Обратная связь"  Click="SuppliersButton_Click" />
+
+        <Frame x:Name="Frame" Grid.Row="1" Grid.ColumnSpan="6" Margin="33,32,10,0" Height="327" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
